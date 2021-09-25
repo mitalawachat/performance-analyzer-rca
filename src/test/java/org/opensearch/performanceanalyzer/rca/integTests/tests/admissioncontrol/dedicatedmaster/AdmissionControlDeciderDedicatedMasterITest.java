@@ -93,7 +93,7 @@ public class AdmissionControlDeciderDedicatedMasterITest {
             on = HostTag.ELECTED_MASTER,
             validator = AdmissionControlDeciderValidator.class,
             forRca = PersistedAction.class,
-            timeoutSeconds = 1000)
+            timeoutSeconds = 10000)
     @AErrorPatternIgnored(
             pattern = "CacheUtil:getCacheMaxSize()",
             reason = "Cache related configs are expected to be missing in this test")

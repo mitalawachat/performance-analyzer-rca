@@ -94,7 +94,7 @@ public class AdmissionControlRcaMultiNodeITest {
             on = HostTag.ELECTED_MASTER,
             validator = AdmissionControlValidator.class,
             forRca = AdmissionControlClusterRca.class,
-            timeoutSeconds = 500)
+            timeoutSeconds = 10000)
     @AErrorPatternIgnored(
             pattern = "CacheUtil:getCacheMaxSize()",
             reason = "Cache related configs are expected to be missing in this test")
